@@ -2,6 +2,7 @@
 
 import InstitutionIcon from "@/components/icons/InstitutionIcon";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import {
   FaUser,
@@ -25,6 +26,8 @@ const Sidebar = () => {
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+
+  const router = useRouter();
 
   return (
     <>
@@ -57,6 +60,18 @@ const Sidebar = () => {
             <div className="bg-black bg-opacity-25 text-white h-full p-2 px-3 text-sm">
               Thebes Academy
             </div>
+          </div>
+
+          <div className="flex justify-center items-center w-full mt-4">
+            <button
+              onClick={() => {
+                localStorage.removeItem("isLogin");
+                router.push("/");
+              }}
+              className="bg-red-700 w-full hover:bg-blue-700 text-white font-bold py-2 px-4"
+            >
+              Log out
+            </button>
           </div>
           <div className="flex justify-center items-center pl-2 xl:pl-4 mt-4">
             <ul className="flex flex-col gap-4">

@@ -1,6 +1,15 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function LoginPortal() {
+  const router = useRouter();
+  const handleLogin = (e: any) => {
+    e.preventDefault();
+    localStorage.setItem("isLogin", "true");
+    router.push("/student-portal");
+  };
+
   return (
     <div className="w-screen flex flex-col justify-center items-center min-h-screen bg-primary px-2 md:px-0">
       <div className="flex flex-col md:flex-row bg-white px-6 py-8 rounded-lg relative w-full md:w-2/3 md:gap-7 drop-shadow-md border border-gray-300">
@@ -35,7 +44,10 @@ export default function LoginPortal() {
               type="password"
               placeholder="Password"
             />
-            <button className="bg-primary text-white rounded-md p-2">
+            <button
+              onClick={handleLogin}
+              className="bg-primary text-white rounded-md p-2"
+            >
               Login
             </button>
           </form>

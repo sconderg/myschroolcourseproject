@@ -1,7 +1,11 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import Sidebar from "./Sidebar";
 import BasicDataPage from "./basicData/BasicDataPage";
 import RegisterationFeesPage from "./registerationFees/RegisterationFeesPage";
 import StudyTimeTablePage from "./studyTimeTable/StudyTimeTablePage";
+import { useEffect, useState } from "react";
 
 const PageToDisplay = ({ page }: { page: string | string[] | undefined }) => {
   // according to the page prop, we need to display the correct page
@@ -22,6 +26,22 @@ export default function StudentPortal({
 }: {
   page: string | string[] | undefined;
 }) {
+  const [islogin, setIsLogin] = useState<boolean>(false);
+  // we need to check if the user is logged in or not
+  // if not, we need to redirect him to the login page
+  const router = useRouter();
+  useEffect(() => {
+    const isLoggedin = localStorage.getItem("isLogin");
+
+    if (!isLoggedin) {
+      setIsLogin(false);
+      router.push("/");
+    } else {
+      setIsLogin(true);
+    }
+  }, [router]);
+  if (!islogin) return null;
+
   return (
     // we need a sidebar to navigate between the different pages
     // we need a header to show the name of the student and the logout button
