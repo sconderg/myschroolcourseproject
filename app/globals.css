@@ -3,25 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-primary: #1f469a;
+  --color-secondary: #ffba10;
+  --color-red-100: #faefef;
+  --color-red-500: #d9534f;
+  --color-red-700: #da3631;
+  --color-green-100: #effcef;
+  --color-green-400: #49ce49;
+  --color-green-500: #5cb85c;
+  --color-green-700: #136e13;
+  --color-gray-100: #fcfcfc;
+  --color-gray-200: #f1f1f1;
+  --color-gray-300: #ebebeb;
+  --color-gray-400: #e5e5e5;
+  --color-gray-500: #dddddd;
+  --color-gray-600: #d0d0d0;
+  --color-gray-700: #aaaaaa;
+  --color-gray-800: #999;
+  --color-gray-900: #707070;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media print {
+  .studytimetable .dontprint {
+    display: none;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
