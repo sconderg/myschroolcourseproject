@@ -8,6 +8,7 @@ import StudyTimeTablePage from "./studyTimeTable/StudyTimeTablePage";
 import { useEffect, useState } from "react";
 import CoursesGradePage from "./CoursesGradePage";
 import ExamsTimeTablePage from "./ExamsTimeTablePage";
+import { useIsLogin } from "@/hooks/useIsLogin";
 
 const PageToDisplay = ({ page }: { page: string | string[] | undefined }) => {
   // according to the page prop, we need to display the correct page
@@ -32,20 +33,7 @@ export default function StudentPortal({
 }: {
   page: string | string[] | undefined;
 }) {
-  const [islogin, setIsLogin] = useState<boolean>(false);
-  // we need to check if the user is logged in or not
-  // if not, we need to redirect him to the login page
-  const router = useRouter();
-  useEffect(() => {
-    const isLoggedin = localStorage.getItem("isLogin");
-
-    if (!isLoggedin) {
-      setIsLogin(false);
-      router.push("/");
-    } else {
-      setIsLogin(true);
-    }
-  }, [router]);
+  const islogin = useIsLogin();
   if (!islogin) return null;
 
   return (
