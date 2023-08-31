@@ -47,7 +47,7 @@ const Sidebar = () => {
         <div className="flex flex-col justify-center items-center">
           {isOpen && (
             <button
-              className="absolute top-0  md:hidden right-0 mt-2 mr-2 text-white text-2xl"
+              className="absolute top-0  md:hidden right-0 mt-2 mr-2 text-white text-2xl z-10"
               onClick={toggleSidebar}
             >
               <FaTimes />
