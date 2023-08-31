@@ -179,7 +179,7 @@ const Sidebar = () => {
                 <Link
                   href="student-portal/?page=messages"
                   onClick={() => setIsOpen(false)}
-                  className="text-white hover:text-gray-300 flex items-center"
+                  className="text-gray-800 flex items-center"
                 >
                   <FaEnvelope className="mr-2" />
                   Messages
