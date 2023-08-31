@@ -4,17 +4,17 @@ const StudyTimeTablePage = () => {
   return (
     <div className="studytimetable">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-lg mb-2 text-primary font-bold dontprint">
+        <h2 className="text-2xl mb-2 text-primary font-bold dontprint">
           Study Time Table
         </h2>
         <div className="flex items-center dontprint">
           <button
-            className="bg-primary text-white rounded-md p-2 mr-2"
+            className="bg-primary text-white rounded-md p-2 px-4 mr-2"
             onClick={() => window.print()}
           >
             Print
           </button>
-          <button className="bg-primary text-white rounded-md p-2">
+          <button className="bg-primary text-white rounded-md p-2 px-4">
             Export
           </button>
         </div>

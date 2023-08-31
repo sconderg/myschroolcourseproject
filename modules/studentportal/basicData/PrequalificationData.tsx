@@ -25,7 +25,7 @@ const PrequalificationData = () => {
         </div>
         <div>
           <p className="font-medium">Degrees</p>
-          <p className="text-gray-700">244</p>
+          <p className="text-gray-700">269</p>
         </div>
         <div>
           <p className="font-medium">Percentage</p>
@@ -41,7 +41,7 @@ const PrequalificationData = () => {
         </div>
         <div>
           <p className="font-medium">Seat Number</p>
-          <p className="text-gray-700">227520</p>
+          <p className="text-gray-700">240310</p>
         </div>
         <div>
           <p className="font-medium">Coordination no.</p>

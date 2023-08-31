@@ -119,7 +119,7 @@ const Sidebar = () => {
                 <Link
                   href="student-portal/?page=questionnaire"
                   onClick={() => setIsOpen(false)}
-                  className="text-white hover:text-gray-300 flex items-center"
+                  className="text-gray-800 flex items-center"
                 >
                   <FaPoll className="mr-2" />
                   Questionnaire
@@ -139,7 +139,7 @@ const Sidebar = () => {
                 <Link
                   href="student-portal/?page=student-progress"
                   onClick={() => setIsOpen(false)}
-                  className="text-white hover:text-gray-300 flex items-center"
+                  className="text-gray-800 flex items-center"
                 >
                   <FaChartLine className="mr-2" />
                   Student Progress
@@ -149,7 +149,7 @@ const Sidebar = () => {
                 <Link
                   href="student-portal/?page=documents"
                   onClick={() => setIsOpen(false)}
-                  className="text-white hover:text-gray-300 flex items-center"
+                  className="text-gray-800 flex items-center"
                 >
                   <FaFileAlt className="mr-2" />
                   Documents
@@ -159,7 +159,7 @@ const Sidebar = () => {
                 <Link
                   href="student-portal/?page=payment"
                   onClick={() => setIsOpen(false)}
-                  className="text-white hover:text-gray-300 flex items-center"
+                  className="text-gray-800 flex items-center"
                 >
                   <FaCreditCard className="mr-2" />
                   Payment
@@ -169,7 +169,7 @@ const Sidebar = () => {
                 <Link
                   href="student-portal/?page=student-id"
                   onClick={() => setIsOpen(false)}
-                  className="text-white hover:text-gray-300 flex items-center"
+                  className="text-gray-800 flex items-center"
                 >
                   <FaIdCard className="mr-2" />
                   Student ID

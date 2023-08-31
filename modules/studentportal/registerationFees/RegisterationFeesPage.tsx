@@ -4,7 +4,7 @@
 const RegisterationFeesPage = () => {
   return (
     <div>
-      <h2 className="text-lg mb-2 text-primary font-bold">
+      <h2 className="text-2xl mb-2 text-primary font-bold">
         Registeration fees
       </h2>
       <div className="flex items-center gap-5 flex-wrap">
@@ -29,7 +29,7 @@ const RegisterationFeesPage = () => {
         <p className="text-gray-700">First</p>
       </div>
 
-      <div className="w-full overflow-x-auto">
+      <div className="w-full overflow-x-auto mt-5">
         <table className="table-auto w-full">
           <thead>
             <tr>

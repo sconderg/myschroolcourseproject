@@ -6,6 +6,8 @@ import BasicDataPage from "./basicData/BasicDataPage";
 import RegisterationFeesPage from "./registerationFees/RegisterationFeesPage";
 import StudyTimeTablePage from "./studyTimeTable/StudyTimeTablePage";
 import { useEffect, useState } from "react";
+import CoursesGradePage from "./CoursesGradePage";
+import ExamsTimeTablePage from "./ExamsTimeTablePage";
 
 const PageToDisplay = ({ page }: { page: string | string[] | undefined }) => {
   // according to the page prop, we need to display the correct page
@@ -16,6 +18,10 @@ const PageToDisplay = ({ page }: { page: string | string[] | undefined }) => {
       return <StudyTimeTablePage />;
     case "registration-fees":
       return <RegisterationFeesPage />;
+    case "courses-grades":
+      return <CoursesGradePage />;
+    case "exams-time-table":
+      return <ExamsTimeTablePage />;
     default:
       return <BasicDataPage />;
   }

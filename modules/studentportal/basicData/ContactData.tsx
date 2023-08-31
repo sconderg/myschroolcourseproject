@@ -7,17 +7,17 @@ const ContactData = () => {
       <div className="grid grid-cols-2 gap-4">
         <div>
           <p className="font-medium">The City</p>
-          <p className="text-gray-700">القاهره</p>
+          <p className="text-gray-700">Cairo</p>
         </div>
         <div>
           <p className="font-medium">Address</p>
           <p className="text-gray-700">
-            35 أش مصطفى صفوت تقاطع مصطفى فهمي - حلوان
+            9 El-Saada St.; Osman Bldgs. Roxy, Heliopolis
           </p>
         </div>
         <div>
           <p className="font-medium">Home Tel</p>
-          <p className="text-gray-700">01228201440</p>
+          <p className="text-gray-700">01099461559</p>
         </div>
         <div>
           <p className="font-medium">Mobile</p>
